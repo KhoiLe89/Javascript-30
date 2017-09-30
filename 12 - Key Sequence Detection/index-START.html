@@ -13,7 +13,6 @@ const secretCode = 'khoile';
 window.addEventListener('keyup', (e) => {
   console.log(e.key);
   pressed.push(e.key);
-  console.log(pressed)
   pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
     ;
 
@@ -21,6 +20,7 @@ window.addEventListener('keyup', (e) => {
       console.log("DING DING")
       cornify_add()
     }
+    console.log(pressed)
   })
 </script>
 </body>
